@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Manish | FrontEnd Developer</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Font Awesome for social icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+  <nav class="navbar">
+    <button class="nav-btn">MANISH</button>
+    <div class="nav-links">
+      <button class="nav-btn" id="home-btn">HOME</button>
+      <button class="nav-btn" id="projects-btn">PROJECTS</button>
+      <button class="nav-btn" id="contact-btn">CONTACT ME</button>
+      <a class="nav-btn" href="cv.pdf" target="_blank" id="cv-btn">CV</a>
+    </div>
+    <div class="nav-avatar"></div>
+  </nav>
+
+  <main class="main-content">
+    <section class="profile-section">
+      <div class="profile-img-container">
+        <img src="IMG_20240709_202825-removebg-preview.png" alt="Profile Photo" class="profile-img">
+      </div>
+    </section>
+    <section class="intro-section">
+      <h1 class="intro-title">i’m FrontEnd<br>Devloper</h1>
+      <p class="intro-desc">
+        BCA 1st year student at MJRP College with a strong interest in front-end development, web design, and UI/UX.<br>
+        Skilled in HTML, CSS, and basic JavaScript, with hands-on experience building responsive and user-friendly websites.
+      </p>
+    </section>
+  </main>
+
+  <h2 class="skill">SKILLS</h2>
+  <section class="skill-section">
+    <span class="skill-pill">HTML</span>
+    <span class="skill-pill">CSS</span>
+    <span class="skill-pill">JavaScript</span>
+    <span class="skill-pill">Photoshope</span>
+    <span class="skill-pill">Illustrator</span>
+  </section>
+
+  <section class="projects" id="projects">
+    <h2 class="project-title">PROJECTS</h2>
+    <div class="project-detail">
+      <h3>While learning JavaScript, I built a working background remover website using the remove.bg API. I am
+        currently working on improving its design and functionality to make it more user-friendly and efficient.</h3>
+    </div>
+    <button class="bg-button" onclick="window.open('https://vishnusuth.github.io/bgrem/', '_blank')">BG-REMO</button>
+    <div class="bg-project" >
+      <iframe class="bg" src="https://vishnusuth.github.io/bgrem/" frameborder="0" height="80%" width="70%"></iframe>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    CONTACT ME
+    <form class="contact-form">
+      <input type="text" name="name" placeholder="Name" required>
+      <input type="tel" name="phone" placeholder="Phone No." required>
+      <input type="email" name="email" placeholder="Email ID" required>
+      <textarea name="message" placeholder="Message" rows="4" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+  <div class="footer">
+    <div class="footer-content">
+      <div class="footer-social">
+        <h3>Social Media</h3>
+        <a href="https://www.instagram.com/thiss.is.manish/" target="_blank" class="footer-icon">
+          <i class="fab fa-instagram"></i> Instagram
+        </a>
+        <a href="https://github.com/vishnusuth" target="_blank" class="footer-icon">
+          <i class="fab fa-github"></i> GitHub
+        </a>
+        <a href="https://www.linkedin.com/in/manish-suthar-714716328/" target="_blank" class="footer-icon">
+          <i class="fab fa-linkedin"></i> LinkedIn
+        </a>
+      </div>
+      <div class="footer-contact">
+        <h3>Contact Info</h3>
+        <div class="footer-contact-item">
+          <i class="fas fa-envelope"></i> manish9784666@email.com
+        </div>
+        <div class="footer-contact-item">
+          <i class="fas fa-phone"></i> +91-9784666136
+        </div>
+        <div class="footer-contact-item">
+          <i class="fas fa-location-dot"></i> Jaipur, Rajasthan
+        </div>
+      </div>
+    </div>
+    <p class="footer-copyright">© 2024 Manish. All rights reserved.</p>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>

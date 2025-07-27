@@ -1,0 +1,348 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #e3f7ff;
+    color: #1a2340;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #1a2340;
+    padding: 10px 0 10px 10px;
+}
+
+.nav-btn {
+    background: #c7dbe3;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 24px;
+    margin: 0 8px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #1a2340;
+    cursor: pointer;
+    transition: background 0.2s;
+    text-decoration: none; /* Remove underline for <a> nav-btn */
+}
+
+.nav-btn:hover {
+    background: #b0c9d6;
+}
+
+.nav-links {
+    display: flex;
+    gap: 10px;
+}
+
+.nav-avatar {
+    width: 48px;
+    height: 48px;
+    background: #c7dbe3;
+    border-radius: 50%;
+    margin-right: 18px;
+}
+
+.main-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+    gap: 60px;
+}
+
+.profile-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-img-container {
+    background: #1a2340;
+    border-radius: 40px;
+    padding: 0;
+    width: 420px;
+    height: 420px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-img {
+    height: 610px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.intro-section {
+    max-width: 600px;
+    text-align: center;
+}
+
+.intro-title {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 24px;
+    color: #1a2340;
+}
+
+.intro-desc {
+    font-size: 1.3rem;
+    color: #23345d;
+    margin-top: 0;
+}
+.skill{
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 40px;
+    color: #1a2340;
+}
+
+.skill-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  margin-top: 40px;
+}
+
+.skill-pill {
+  display: inline-block;
+  padding: 12px 28px;
+  border: 1.5px solid #bdbdbd;
+  border-radius: 50px;
+  background: rgba(255,255,255,0.7);
+  color: #1a2340;
+  font-size: 1.1rem;
+  font-weight: 600;
+  box-shadow: none;
+  backdrop-filter: blur(6px);
+  transition: background 0.2s, border-color 0.2s;
+}
+
+.skill-pill:hover {
+  background: #e3f7ff;
+  border-color: #1a2340;
+}
+
+@media (max-width: 900px) {
+    .main-content {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .profile-img-container {
+        width: 300px;
+        height: 300px;
+    }
+    .profile-img {
+        width: 400px;
+        height: 435px;
+    }
+    .intro-title {
+        font-size: 2.5rem;
+    }
+}
+.bg-project{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    height: 80vh;
+    width: 100%;
+}
+
+.bg{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.project-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 50px;
+    color: #1a2340;
+}
+.project-detail {
+    font-size: 1.2rem;
+    color: #23345d;
+    text-align: center;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+.contact {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 60px;
+  color: #1a2340;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 24px;
+  width: 100%;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  background: #fff;
+  padding: 32px 28px;
+  border-radius: 18px;
+  box-shadow: 0 2px 16px rgba(34, 60, 80, 0.12);
+  min-width: 320px;
+  max-width: 400px;
+  width: 100%;
+  align-items: center;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px 16px;
+  border: 1.5px solid #c7dbe3;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: inherit;
+  background: #e3f7ff;
+  color: #1a2340;
+  resize: none;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #1a2340;
+}
+
+.contact-form button {
+  padding: 12px 0;
+  width: 100%;
+  background: #1a2340;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.contact-form button:hover {
+  background: #23345d;
+}
+.footer {
+  width: 100%;
+  background: #1a2340;
+  color: #fff;
+  padding: 32px 0 12px 0;
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 80px;
+  width: 100%;
+  max-width: 900px;
+  margin-bottom: 18px;
+}
+
+.footer-social, .footer-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-width: 220px;
+}
+
+.footer-social h3,
+.footer-contact h3 {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 16px;
+  color: #e3f7ff;
+}
+
+.footer-icon {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #e3f7ff;
+  text-decoration: none;
+  font-size: 1.1rem;
+  margin-bottom: 12px;
+  transition: color 0.2s;
+}
+
+.footer-icon i {
+  font-size: 1.4rem;
+}
+
+.footer-icon:hover {
+  color: #c7dbe3;
+}
+
+.footer-contact-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.1rem;
+  margin-bottom: 12px;
+  color: #e3f7ff;
+}
+
+.footer-contact-item i {
+  font-size: 1.2rem;
+}
+
+.footer-copyright {
+  text-align: center;
+  font-size: 1rem;
+  color: #c7dbe3;
+  margin-top: 10px;
+}
+
+@media (max-width: 700px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+  }
+  .footer-social, .footer-contact {
+    align-items: center;
+    min-width: unset;
+  }
+}
+.bg-button {
+    background: #1a2340;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 24px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.2s;
+    display: block;
+    margin: 24px auto 0 auto;
+}
